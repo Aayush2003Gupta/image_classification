@@ -72,8 +72,9 @@ main_folder
 Run the FastAPI from your terminal<br>
 ```uvicorn app:app --reload```<br>
 
-Open another instance of command prompt (windows) and terminal (linux and MacOS), and enter the main_folder by changing directory appropriately.<br>
-Now activate the virtual environment using <br>
+- Open another instance of command prompt (windows) and terminal (linux and MacOS)
+- enter the main_folder by changing directory appropriately.<br>
+- Now activate the virtual environment using <br>
 ```image_classification\Scripts\activate``` (Windows)<br>
 ```source image_classification/bin/activate``` (MacOS, linux)<br>
 
