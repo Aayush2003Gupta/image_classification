@@ -38,40 +38,46 @@ torch torchvision fastapi uvicorn matplotlib python-multipart streamlit<br>
 _model_path = os.path.join( main_folder, 'best_model.pt' )_
 
 After training the directory structure should look like this<br>
-
+```
+Directory Structure:-
 main_folder
 	|
-	| —------- image_classification.ipynb
-	|
-	| —------- frontend.py
-	|
-	| —------- app.py
-	|
-	| —------- best_model.pt
-	|
-	| —------- README.txt
-	|
-	| —------- cifar10
+	| -------- image_classification
 	|		|
-	|		| —------ train
-	|		| 
-	|		| —------ test
-	|
-	| —------- models
+	| 		| —------- app.py
 	|		|
-	|		| —------- trained_model.pt
+	| 		| —------- best_model.pt
+	| 		|
+	| 		| —------- frontend.py
+	|		|
+	| 		| —------- image_classification.ipynb
+	|		|
+	| 		| —------- Image_Classification_Report.docx
+	|		|
+	| 		|—------- inference.py
+	|		|
+	| 		| —------- README.txt
+	|		|
+	| 		| —------- cifar10
+	|		|	     |
+	|		| 	     | —------ train
+	|		| 	     |
+	|		| 	     | —------ test
+	|		|		
+	| 		| —------- models
+	|		|	    |
+	|		| 	    | —------- trained_model.pt
+```
+# For inference:
+Run the FastAPI from your terminal<br>
+```uvicorn app:app --reload```<br>
 
+Open another instance of command prompt (windows) and terminal (linux and MacOS), and enter the main_folder by changing directory appropriately.<br>
+Now activate the virtual environment using <br>
+```image_classification\Scripts\activate``` (Windows)<br>
+```source image_classification/bin/activate``` (MacOS, linux)<br>
 
-#For inference:
-Run the FastAPI from your terminal
-```uvicorn app:app --reload```
+Run the streamlit frontend on your localhost using the command<br>
+```streamlit run frontend.py```<br>
 
-Open another instance of command prompt, and enter the main_folder by changing directory appropriately.
-Now activate the virtual environment using 
-```image_classification\Scripts\activate``` (Windows)
-```source image_classification/bin/activate``` (MacOS, linux)
-
-Run the streamlit frontend on your localhost using the command
-```streamlit run frontend.py```
-
-The streamlit frontend will open in the browser, please upload either a ‘png’, ‘jpg’ or a ‘jpeg’ file by clicking on the Browse files button.
+The streamlit frontend will open in the browser, please upload either a ‘png’, ‘jpg’ or a ‘jpeg’ file by clicking on the Browse files button.<br>
