@@ -1,25 +1,23 @@
-README.txt
-
 After downloading the files from github or using git clone please ensure your directory structure looks like this
 ```
 Directory Structure:-
 main_folder
 	|
-	| -------- image_cal
-	|
-	| —------- app.py
-	|
-	| —------- best_model.pt
-	|
-	| —------- frontend.py
-	|
-	| —------- image_classification.ipynb
-	|
-	| —------- Image_Classification_Report.docx
-	|
-	| —------- inference.py
-	|
-	| —------- README.txt
+	| -------- image_classification
+	|		|
+	| 		| —------- app.py
+	|		|
+	| 		| —------- best_model.pt
+	| 		|
+	| 		| —------- frontend.py
+	|		|
+	| 		| —------- image_classification.ipynb
+	|		|
+	| 		| —------- Image_Classification_Report.docx
+	|		|
+	| 		|—------- inference.py
+	|		|
+	| 		| —------- README.txt
 ```
 ## On windows please use command prompt
 It is recommended to create a new virtual environment<br>
